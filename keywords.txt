@@ -1,19 +1,19 @@
 #######################################
-# Syntax Coloring Map For RTClib
+# Syntax Coloring Map For ReleSR
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-releSR	KEYWORD1
+ReleSR	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-set		KEYWORD2
-reset		KEYWORD2
+Set		KEYWORD2
+Reset	KEYWORD2
 CV		KEYWORD2
 
 #######################################

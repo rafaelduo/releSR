@@ -1,5 +1,5 @@
 /*
-	name=releSR
+	name=ReleSR
 	version=1.0.0
 	license=FREE
 	author=Rafael Guerreiro <rafael@duo.eng.br>
@@ -14,11 +14,11 @@
   *** Example for activating multiples relay's via digital inputs ***
 */
 
-#include <releSR.h>
+#include <ReleSR.h>
 
-releSR RL1;
-releSR RL2;
-releSR RL3;
+ReleSR RL1;
+ReleSR RL2;
+ReleSR RL3;
 
 const int b1 = 13;
 const int b2 = 14;
@@ -48,16 +48,16 @@ void setup() {
 
 void loop() {
 
-  RL1.set(digitalRead(b1));
-  RL1.reset(digitalRead(b2));
+  RL1.Set(digitalRead(b1));
+  RL1.Reset(digitalRead(b2));
   digitalWrite(led1, RL1.CV);
 
-  RL2.set(digitalRead(b3));
-  RL2.reset(digitalRead(b4));
+  RL2.Set(digitalRead(b3));
+  RL2.Reset(digitalRead(b4));
   digitalWrite(led2, RL2.CV);
 
-  RL3.set(digitalRead(b5));
-  RL3.reset(digitalRead(b6));
+  RL3.Set(digitalRead(b5));
+  RL3.Reset(digitalRead(b6));
   digitalWrite(led3, RL3.CV);
 
   delay(1);

@@ -2,7 +2,7 @@
 	name=releSR
 	version=1.0.0
 	license=FREE
-	author=Rafael Guerreiro <afael@duo.eng.br>
+	author=Rafael Guerreiro <rafael@duo.eng.br>
 	maintainer=Rafael Guerreiro <rafael@duo.eng.br>
 	sentence=Simulates a relay set/reset (Logica Ladder for Logica C++).
 	paragraph=The ReleSR library.
@@ -49,21 +49,15 @@ void setup() {
 void loop() {
 
   RL1.set(digitalRead(b1));
-  RL1.enable(digitalRead(b1));
   RL1.reset(digitalRead(b2));
-  RL1.enable(digitalRead(b2));
   digitalWrite(led1, RL1.CV);
 
   RL2.set(digitalRead(b3));
-  RL2.enable(digitalRead(b3));
   RL2.reset(digitalRead(b4));
-  RL2.enable(digitalRead(b4));
   digitalWrite(led2, RL2.CV);
 
   RL3.set(digitalRead(b5));
-  RL3.enable(digitalRead(b5));
   RL3.reset(digitalRead(b6));
-  RL3.enable(digitalRead(b6));
   digitalWrite(led3, RL3.CV);
 
   delay(1);

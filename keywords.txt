@@ -14,7 +14,7 @@ releSR	KEYWORD1
 
 set		KEYWORD2
 reset		KEYWORD2
-enable	KEYWORD2
+CV		KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

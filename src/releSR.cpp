@@ -15,15 +15,6 @@ releSR::releSR(){}
 void releSR::set(boolean set)
 {
 	_set=set;
-}
-void releSR::reset(boolean reset)
-{
-	_reset=reset;
-}
-
-boolean releSR::enable(boolean entrada)
-{
-	
 	if (_set == HIGH && selo1 == false && _reset == LOW) {
 		Serial.println("Relay ON");
 		
@@ -33,7 +24,10 @@ boolean releSR::enable(boolean entrada)
 	if (_set == LOW && selo1 == true) {
 		selo1 = false;
 	}
-
+}
+void releSR::reset(boolean reset)
+{
+	_reset=reset;
 	if (_reset == HIGH && selo2 == false) {
 		Serial.println("Relay OFF");
 		

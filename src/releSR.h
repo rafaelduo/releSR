@@ -2,7 +2,7 @@
 	name=releSR
 	version=1.0.0
 	license=FREE
-	author=Rafael Guerreiro <afael@duo.eng.br>
+	author=Rafael Guerreiro <rafael@duo.eng.br>
 	maintainer=Rafael Guerreiro <rafael@duo.eng.br>
 	sentence=Simulates a relay set/reset (Logica Ladder for Logica C++).
 	paragraph=The ReleSR library.
@@ -26,7 +26,6 @@ class releSR
 		boolean _set;
 		boolean _reset;
 		boolean CV;
-		boolean enable(boolean entrada);
 	
 	private:
 		int _indice;

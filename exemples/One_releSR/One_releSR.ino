@@ -1,5 +1,5 @@
 /*
-	name=releSR
+	name=ReleSR
 	version=1.0.0
 	license=FREE
 	author=Rafael Guerreiro <rafael@duo.eng.br>
@@ -14,9 +14,9 @@
   *** Example for activating a relay via digital inputs ***
 */
 
-#include <releSR.h>
+#include <ReleSR.h>
 
-releSR RL1;
+ReleSR RL1;
 
 const int b1 = 13;
 const int b2 = 14;
@@ -29,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  RL1.set(digitalRead(b1));
-  RL1.reset(digitalRead(b2));
+  RL1.Set(digitalRead(b1));
+  RL1.Reset(digitalRead(b2));
   digitalWrite(led, RL1.CV);
 }

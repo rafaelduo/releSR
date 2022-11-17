@@ -1,12 +1,15 @@
 [![releSR](https://github.com/rafaelduo/releSR)
 
 
-# releSR
+# Updates
 
 Library for Simulates a relay set/reset (Logica Ladder for Logica C++).
+
 Updates:
-	R01 - 11/11/2022 - Changes to input variables;
-	R00 - 10/11/2022 - Initial release;
+
+R01 - 11/11/2022 - Changes to input variables;
+
+R00 - 10/11/2022 - Initial release;
 
 
 ## Description
@@ -28,35 +31,50 @@ the block output will become FALSE and it will only return to TRUE after the var
 #include <ReleSR.h>
 
 ReleSR RL1;
+
 ReleSR RL2;
 
 ### Relay activation
 
 RL1.Set(*var bool);
+
 RL2.Set(*var bool);
 
 ### Relay deactivation
 
 RL1.Reset(*var bool);
+
 RL2.Reset(*var bool);
 
 ### Examples for using the ReleSR Block Output
 
 digitalWrite(*pin_out, RL1.CV);
+
 digitalWrite(*pin_out, RL2.CV);
 
 or
 
 if (RL1.CV){
+
 	//You code if true;
-}else{
+}
+
+else{
+
 	//Your code if false;
+	
 }
 
 if (RL2.CV){
+
 	//You code if true;
-}else{
+	
+}
+
+else{
+
 	//Your code if false;
+	
 }
 
 

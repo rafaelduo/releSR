@@ -56,18 +56,18 @@ or
 
 if (RL1.CV){
 
-	//You code if true;
+	You code if true;
 }
 
 else{
 
-	//Your code if false;
+	Your code if false;
 	
 }
 
 if (RL2.CV){
 
-	//You code if true;
+	You code if true;
 	
 }
 

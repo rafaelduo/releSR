@@ -28,55 +28,49 @@ the block output will become FALSE and it will only return to TRUE after the var
 
 ### Constructor
 
+```c++
 #include <ReleSR.h>
 
 ReleSR RL1;
-
 ReleSR RL2;
+```
 
 ### Relay activation
 
+```c++
 RL1.Set(*var bool);
-
 RL2.Set(*var bool);
+```
 
 ### Relay deactivation
 
+```c++
 RL1.Reset(*var bool);
-
 RL2.Reset(*var bool);
+```
 
 ### Examples for using the ReleSR Block Output
 
+```c++
 digitalWrite(*pin_out, RL1.CV);
-
 digitalWrite(*pin_out, RL2.CV);
+```
 
 or
 
+```c++
 if (RL1.CV){
-
-	You code if true;
-}
-
-else{
-
-	Your code if false;
-	
+	//You code if true;
+}else{
+	//Your code if false;
 }
 
 if (RL2.CV){
-
-	You code if true;
-	
-}
-
-else{
-
+	//You code if true;
+}else{
 	//Your code if false;
-	
 }
-
+```
 
 ## Operation
 

@@ -7,6 +7,8 @@ Library for Simulates a relay set/reset (Logica Ladder for Logica C++).
 
 Updates:
 
+R02 - 17/11/2022 - Update in README.md file;
+
 R01 - 11/11/2022 - Changes to input variables;
 
 R00 - 10/11/2022 - Initial release;
